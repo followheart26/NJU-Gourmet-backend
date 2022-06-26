@@ -13,10 +13,10 @@ import lombok.NoArgsConstructor;
 @TableName("meal")
 public class Meal {
     @TableId(type = IdType.AUTO)
-    int id;
+    Integer id;
+    int price;
     String name;
-    String address;
-    String img_url;
-    int likes_num;
-    int comments_num;
+    int address;
+    int likes;
+    Integer userid;
 }

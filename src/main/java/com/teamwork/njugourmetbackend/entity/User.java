@@ -14,11 +14,10 @@ import lombok.NoArgsConstructor;
 @TableName("user")
 public class User {
     @TableId(type = IdType.AUTO)
-    int id;
+    Integer id;
     String username;
     @JsonIgnore
     String password;
-    int likes_num;
-    int comments_num;
-
+    String sex;
+    String telephone;
 }
